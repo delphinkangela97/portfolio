@@ -1,0 +1,453 @@
+ @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+ body{
+    width: 100%; 
+    height: 100% 
+    overflow: hidden; 
+    background: linear-gradient (to right,rgb(255,255,255), rgb(254,215,173)); 
+} 
+
+nav{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    /* position: sticky; */
+}
+
+.nav-container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;   
+}
+
+.logo span{
+    color: rgb(109, 67.0);
+    text-shadow: 0 0 10px rgb(109,67,0);
+}
+
+.hamburg, .cancel{
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: black;
+  font-size: 2rem;
+  display: none;
+}
+
+.nav-container .links{
+    display: flex;
+    gap: 3rem; 
+    align-items: center;  
+}
+
+.nav-container .links a{
+    position: relative;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 550;
+    transform: 0.3s linear;
+}
+
+
+.container .links a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+   background-color: rgb(109,67,0);
+    transition: 0.3s linear;
+}
+
+.nav-container .links a:hover{
+    width: 100%;
+    text-decoration: none;
+    color: #11a2e2;
+}
+
+.nav-container .contact-btn{
+   background-color: transparent;
+   padding: 5px 20px;
+   border-radius: 20px;
+   border: 2px solid rgb(109,67,0);
+   transition: 0.2s;
+}
+
+.nav-container .contact-btn a{
+    color: #dddd; 
+    transition: 0.3s;
+}
+
+
+.nav-container .contact-btn :hover, .nav-container .contact-btn:hover{
+    background-color: rgb(155, 67, 0);
+    color: white;
+}
+.nav-container links-a:hover{
+    color: rgb(109, 67, 0);
+}
+
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform:translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: brightneness(40%)blur(3px);
+    box-shadow: 0 0 20px black;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a{
+    color: white;
+    display:flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a:hover{
+    background-color: rgb(109,67,0)
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-container .image{
+    z-index: -1;
+    width: 100%;
+    margin: 100px ;
+}
+
+
+
+.main-container .image img{
+    width: 90%;
+    border-radius: 50px;
+    animation: center;
+    align-items: left;
+}
+
+
+.container .content{
+    color: black;
+    width: 40%;
+    min-height: 100px;
+}
+
+.content h1{
+    font-size: clamp(1,2rem + 5vw, 3rem + 5rem);
+}
+
+.content h1 span{
+    color: rgb(109,67,0);
+    text-shadow: 0 0 10px rgb(109,67,0);
+}
+
+.content .typewriter{
+    font-weight: 600;
+    font-size: clamp(1rem,1rem +5vw,2rem);
+}
+
+.content .typewriter span{
+    color: rgb(109,67,0);
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px rgb(109,67,0);
+    position: relative;
+    transition: 0.3s linear;
+}
+
+.typewriter span::before{
+    content: "Developer ";
+    animation: words 15s infinite;
+}
+
+.typewriter span::after{
+    content:"";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    animation: cursor 0.6s linear infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3p solid #b74b4b;
+    }
+}
+
+@keyframes words{
+    0%, 33%{
+    content: "Fullstack Developer "
+    }
+    34%, 66%{
+        content: "Graphic & Web Designer";
+    }
+    67%, 100%{
+        content: "Electrician";
+    }
+}
+
+.content p{
+    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
+    margin: 10px 0;
+    width: 50%;
+    position: sticky;
+    text-align: justify;
+}
+
+.social-links img{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0.2rem solid rgb(109,67,0);
+    margin: 3px 3Spx;
+    color: rgb(109, 67, 0);
+    margin: 5px 10px; 
+    font-size: 1.5rem;
+    transition: o.2s linear;
+}
+
+.cancel{
+    color: white;
+}
+
+.social-links img:hover{
+    scale: 1.3em;
+    color: white;
+    background-color: rgb(109, 67.0);
+    filter: drop-shadow(0 0 10px rgb(109,67,0));
+
+}
+
+.content button{
+    width: 15%;
+    height: 6vh;
+    margin: 3px 3px;
+    background-color: rgb(109, 67, 0);
+    color: white;
+    outline: none;
+    font-size: 100%;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.2s;
+   
+}
+
+.content button a{
+    text-decoration: none;
+    color: white;
+}
+
+.content button:hover{
+    scale: 1.1;
+    color: white
+    background: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px rgb(109, 67, 0);
+   
+
+}
+
+/* footer*/
+
+
+footer {
+    flex-shrink: 0;
+    border-top: 1px dashed #000;
+    width: 100%; 
+    height: 27vw;  
+    background-color: rgb(109, 67, 0);
+    color: white;
+}
+
+.contenu-footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 100px;
+
+}
+
+.bloc {
+    width: 25%;
+    margin: 0 30px;
+}
+
+/* contact*/
+.footer-contact h3,
+.footer-services h3,
+.footer-horaires h3,
+.footer-medias h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.footer-contact p {
+    padding: 5px 0;
+}
+
+/*services*/
+
+.liste-services,
+.liste-horaire,
+.liste-media {
+    list-style-type: none;
+
+}
+
+.liste-services li{
+    padding: 2px 0;
+}
+
+.liste-services a {
+    text-decoration: none;
+    color: white;
+}
+
+.liste-services a:hover {
+    color: #11a2e2;
+}
+
+/* medias*/
+.liste-media {
+    position: relative;
+    right: 7px;
+   
+}
+
+.liste-medias img {
+    width: 40px;
+    margin: 10px 10px;
+
+}
+
+.footer-medias a{
+     text-decoration: none;
+    color: white;
+}
+.footer-medias a:hover{
+    color: #11a2e2;
+}
+
+.footer-contact a{
+     text-decoration: none;
+    color: white;
+}
+.footer-contact a:hover{
+     color: #11a2e2;
+}
+
+/* media queries*/
+/* 
+@media(max-width:884px) {
+    body{
+        overflow-y:visible;
+    }
+    nav.logo{
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container .links{
+        display: none;
+    }
+
+    .hamburg .cancel{
+        display: block;
+    }
+    .main-container .content{
+        width: 80%;
+    }
+
+    .social-links img{
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+        text-decoration: white; 
+        
+    }
+
+  .main-container .image{
+    width: 80%;
+    margin-bottom: 0px;
+
+  } 
+  .contenu-footer {
+        width: 320px;
+        flex-wrap: wrap;
+    }
+
+    .bloc {
+        width: 300%;
+        margin: 30px 30px;
+    }
+  
+     .block:nth-child(1),
+    .block:nth-child(2) {
+        margin-bottom: 30px;
+    }
+    .block:nth-child(1),
+    .block:nth-child(2) {
+        margin-bottom: 50px;
+        .block:nth-child(1) {
+        margin-top: 0px;
+    } 
+    }
+} */
+
+
+
+
+
