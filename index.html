@@ -1,119 +1,523 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Portfolio - Ingénieur Télécom & Développeur Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css"> 
     <link rel="shortcut icon" href="./logo.jpg" />
-    <title>Delphin Kangela Portfolio</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-               <span>Delphin Kangela</span>  
-            </div>
-            <div class="links">
-                <div class="link"><a href="index.html">Home</a></div>
-                <div class="link"><a href="About.html">About</a></div>
-                <div class="link"><a href="Skills.html">Skills</a></div>
-                <div class="link"><a href="Projects.html">Projects</a></div>
-                <div class="link"><a href="Services.html">Services</a></div>
-                <div class="link"><a href="Blog.html">Blog</a></div>
-                <div class="link contact-btn"><a href="Contact Us.html">Contact Us</a></div>
-             </div>
-            </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg"()></i>
-            </div> 
-            <div class="dropdown">
-                <div class="links">
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Skills</a>
-                    <a href="">Services</a>
-                    <a href="">Blogs</a>
-                    <a href="">Contact Us</a>
-                  <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+    <!-- Header et Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Port<span>folio</span></a>
+                <ul class="nav-menu">
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Home -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="home-content">
+                <h1>BIMPEKU KANGELA Delphin</h1>
+                <h2>Développeur Web, Ingénieur Télécom & Electricien</h2>
+                <p>Je conçois et développe des solutions innovantes en télécommunications, en électricité et applications web performantes.</p>
+                <div class="home-btns">
+                    <a href="#projects" class="btn">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-outline">Me contacter</a>
                 </div>
             </div>
-             </nav>
-
-            <section>
-                <div class="main-container">
-                    <div class="image">
-                        <img src="./main.jpg"  height="" alt="image-section"> 
+        </div>
+    </section>
+  <!-- Section About -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>À propos de moi</h2>
+                <p>Découvrez mon parcours et mon expertise</p>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="./delphinafrix.jpg" alt="Photo de profil">
+                </div>
+                <div class="about-text">
+                    <h3>Développeur Web Full Stack, Ingénieur Télécom & Electricien </h3>
+                    <p>Je suis un ingénieur en télécommunications passionné par les technologies web. Avec plus de 2 ans d'expérience, j'ai travaillé sur divers projets allant de la conception de réseaux à la création d'applications web complètes.</p>
+                    <p>Mon expertise couvre à la fois les infrastructures de télécommunications (3G, 4G, 5G, fibre optique, réseaux IP) et le développement web (frontend, backend, bases de données).</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <span><strong>Nom:</strong> Delphin Kangela</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span><strong>Téléphone:</strong> +243819020134</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span><strong>Email:</strong> bimpekukangela@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span><strong>Localisation:</strong> Goma, Dr Congo</span>
+                        </div>
                     </div>
-                    <div class="content">
-                        <h1>Hello, It's <span>Delphin KANGELA</span></h1>
-                        <div class="typewriter">I'm a <span></span></div>
-                        <p> Je suis un jeune ingénieur engagé pour le développement durable de notre pays et à la transformation numérique de notre société
-          Je suis passionné par l’innovation responsable. Mon parcours
-          allie expertise technique en réseaux et systèmes numériques à un
-          engagement profond pour les causes environnementales et sociales. Que
-          ce soit à travers la conception d’infrastructures connectées ou le
-          développement d’outils web accessibles, je m’efforce de créer des
-          solutions qui répondent aux défis de notre époque tout en respectant
-          les principes de durabilité et d’inclusion.</p>
-                        <div class="social-links">
-                            <a href="#"><img src="./facebook.png" height="" alt="image-section" /></a>
-                            <a href="#"><img src="./linkdin.png" height="" alt="image-section" /></a>
-                            <a href="#"><img src="./twitter.png" height="" alt="image-section" /></a>
-                            <a href="#"><img src="./instagram.png" height="" alt="image-section" /></a>
-                        <!-- </ul> -->
+                    <a href="./CV_BIMPEKU KANGELA Delphin.pdf" class="btn" style="margin-top: 20px;">Télécharger mon CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Skills -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mes compétences</h2>
+                <p>Expertise technique et domaines de compétence</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Ingénierie Télécom</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Réseaux 3G, 4G et 5G</span>
+                            <span>75%</span>
                         </div>
-                        <div class="btn">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
                         </div>
-                           <button><a href="./CV_delphin_kangela.pdf" target="_blank">Download CV</button></a>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Fibre optique</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Réseaux IP</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Sécurité réseau</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%;"></div>
+                        </div>
                     </div>
                 </div>
-           
-       </section> 
-        <footer>
-        <marquee>Copyright Delphin kangela @2025</marquee>
-      <div class="contenu-footer">
+                <div class="skill-category">
+                    <h3>Développement Web</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>HTML/CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>JavaScript</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>React.js</span>
+                            <span>67%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Node.js</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Autres compétences</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Gestion de projet</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Cloud Computing</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>IoT</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Electricité</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <div class="bloc footer-services">
-          <h3>Our Services</h3>
-          <ul class="liste-services">
-            <li><a href="#"> Web Development</a></li> 
-            <a href="#">Web & Graphic Design </a></li>
-            <li><a href="#">E-commerce</a> </li>
-            <li><a href="#">Electric Installation </a></li> 
-            <li><a href="#">CCTV Installation</a></li>
-            <li><a href="#">Networks Installation </a></li>
-            </ul>
+    <!-- Section Projects -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mes projets</h2>
+                <p>Réalisations récentes en ingénierie télécom et développement web</p>
+            </div>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1774&q=80" alt="Projet réseau 5G">
+                    </div>
+                    <div class="project-content">
+                        <h3>Déploiement réseau 3G, 4G et 5G</h3>
+                        <p>Conception et déploiement d'un réseau 3G, 4G et 5Gpour une zone urbaine dense.</p>
+                        <div class="project-tags">
+                            <span>3G, 4G et 5G</span>
+                            <span>Réseaux mobiles</span>
+                            <span>Infrastructure</span>
+                        </div>
+                        <a href="#" class="btn">Voir les détails</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Application web">
+                    </div>
+                    <div class="project-content">
+                        <h3>Plateforme de gestion réseau</h3>
+                        <p>Développement d'une application web pour la surveillance et gestion des réseaux télécom.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>API REST</span>
+                        </div>
+                        <a href="#" class="btn">Voir les détails</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1765&q=80" alt="Projet fibre optique">
+                    </div>
+                    <div class="project-content">
+                        <h3>Réseau fibre FTTH</h3>
+                        <p>Planification et déploiement d'un réseau fibre optique jusqu'au domicile (FTTH).</p>
+                        <div class="project-tags">
+                            <span>Fibre optique</span>
+                            <span>FTTH</span>
+                            <span>Réseau fixe</span>
+                        </div>
+                        <a href="#" class="btn">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
         </div>
-         
-        <div class="bloc footer-contact">
-          <h3>Stay in Touch</h3>
-          <p><a href="tel:+243974271569"> +243974271569</a></p>
-          <p><a href="mailto: bimpekukangela@gmail.com">bimpekukangela@gmail.com</a></p>
-          <p>Goma city, Q. Himbi, Av. uvira N°55</p> 
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mes services</h2>
+                <p>Solutions professionnelles en ingénierie télécom et développement web</p>
+            </div>
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>Ingénierie Réseaux</h3>
+                    <p>Conception, déploiement et optimisation de réseaux de télécommunications (5G, fibre, IP).</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Développement Web</h3>
+                    <p>Création d'applications web modernes et responsives avec les dernières technologies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Solutions Cloud</h3>
+                    <p>Migration, déploiement et gestion d'infrastructures cloud pour entreprises.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Sécurité Réseau</h3>
+                    <p>Audit, conception et mise en œuvre de solutions de sécurité pour réseaux et applications.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Applications Mobiles</h3>
+                    <p>Développement d'applications mobiles natives et hybrides pour iOS et Android.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Consulting Tech</h3>
+                    <p>Conseil en stratégie technologique et accompagnement dans vos projets digitaux.</p>
+                </div>
+            </div>
         </div>
-        
-        <div class="bloc footer-horaires">
-          <h3>Schedule</h3>
-          <ul class="liste-horaires">
-             <li>Mon: 7h-22h</li>
-             <li>Tue: 7h-22h</li>
-             <li>Wed: 7h-22h</li>
-             <li>Thu: 7h-22h</li>
-             <li>Fri: 7h-22h</li>
-             <li>Sat: Closed</li>
-             <li>Sun: Closed</li>
-          </ul>
+    </section>
+
+    <!-- Section Blog -->
+    <section id="blog" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Blog & Articles</h2>
+                <p>Dernières actualités et réflexions sur les technologies</p>
+            </div>
+            <div class="blog-container">
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1764&q=80" alt="Article 5G">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 15 Juin 2025</span>
+                            <span><i class="far fa-comments"></i> 300 Commentaires</span>
+                        </div>
+                        <h3>L'avenir de la 5G et au-delà</h3>
+                        <p>Exploration des développements futurs des réseaux mobiles et leur impact sur notre quotidien.</p>
+                        <a href="#" class="btn">Lire la suite</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Article développement web">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 2 Aout 2025</span>
+                            <span><i class="far fa-comments"></i> 234 Commentaires</span>
+                        </div>
+                        <h3>Les frameworks JavaScript en 2025</h3>
+                        <p>Comparaison des principaux frameworks JavaScript et conseils pour choisir le bon outil.</p>
+                        <a href="#" class="btn">Lire la suite</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1765&q=80" alt="Article fibre optique">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 20 novembre 2025</span>
+                            <span><i class="far fa-comments"></i> 153 Commentaires</span>
+                        </div>
+                        <h3>Le déploiement de la fibre en France</h3>
+                        <p>État des lieux et défis du déploiement de la fibre optique sur le territoire français.</p>
+                        <a href="#" class="btn">Lire la suite</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="bloc footer-medias">
-          <h3>Social Medias</h3>
-           <ul>
-            <li><a href="link"><img src="./facebook.png" height="20" alt="image-section" />Facebook</a></li> 
-              <li><a href="link"><img src="./linkdin.png" height="20" alt="image-section" />Linkdin</a></li>
-             <li><a href="link"><img src="./twitter.png" height="20" alt="image-section" />Twitter</a></li>
-               <li><a href="link"><img src="./instagram.png" height="20" alt="image-section" />instagram></a></li>
-        </ul>
-       </div> 
-      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contactez-moi</h2>
+                <p>N'hésitez pas à me contacter pour discuter de votre projet</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Adresse</h3>
+                            <p>123 Avenue Uvira, Quartier Himbi, Goma, Dr Congo</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Téléphone</h3>
+                            <p>+243819020134</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>bimpekukangela@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Site Web</h3>
+                            <p>www.bimpekukangela.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Portfolio</h3>
+                    <p>Ingénieur Télécom & Développeur Web passionné par l'innovation technologique et la création de solutions digitales performantes.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Ingénierie Réseaux et Electriques</a></li>
+                        <li><a href="#">Développement Web</a></li>
+                        <li><a href="#">Solutions Cloud</a></li>
+                        <li><a href="#">Sécurité Réseau</a></li>
+                        <li><a href="#">Consulting Tech</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Goma, France</li>
+                        <li><i class="fas fa-phone"></i> +243974271569</li>
+                        <li><i class="fas fa-envelope"></i> bimpekukangela@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Bimpeku Kangela Delphin. Tous droits réservés.</p>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        // Menu mobile
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Fermer le menu en cliquant sur un lien
+        document.querySelectorAll('.nav-menu a').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Animation au défilement
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
 </body>
 </html>
