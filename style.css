@@ -609,6 +609,7 @@
 
         /* Responsive Design */
         @media (max-width: 992px) {
+
             .about-content {
                 flex-direction: column;
             }
@@ -620,8 +621,15 @@
         }
 
         @media (max-width: 768px) {
+            body{
+                width: 90%;
+                padding: 10px;
+            }
             .hamburger {
-                display: block;
+                display: block;       
+                  
+          }
+
             }
 
             .nav-menu {
@@ -644,6 +652,7 @@
 
             .nav-menu li {
                 margin: 15px 0;
+                
             }
 
             .home-content h1 {
